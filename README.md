@@ -20,13 +20,13 @@ This chapter thoroughly examines soil threats and trends in Southern Mexico, Cen
 
 Folder description:
 
--> SoWSR_SMx_CA_Crb.7z
-	-> extent
+- SoWSR_SMx_CA_Crb.7z
+	- extent
 		- Extent_AOI_Union.shp 				#Country boundaries
 		- Modis_CLC.shp 				#Corine Land Cover from MODIS
 		- WRBpol.shp 					#Most probable soil type using WRB classification
 		- Extent_level3.shp 				#Intersection of previous Shapes
-	-> level3 						#This folder contains the data frame results of calculating zonal statistics from the rasters.
+	- level3 						#This folder contains the data frame results of calculating zonal statistics from the rasters.
 		- Bare_1km_km2_ZonalStats.csv 			
 		- CIC_0-30cm_ZonalStats.csv 			
 		- CN_ratio_SoilGrids_null_ZonalStats.csv 	
@@ -43,7 +43,7 @@ Folder description:
 		- SOC_slope_negative_ZonalStats.csv
 		- SOC_slope_positive1_ZonalStats.csv
 		- SOCDensity_0_30cm_ZonalStats.csv
-	-> rasters
+	- rasters
 		- Bare_1km_km2.tif				#Bare soil percent per square kilometer
 		- CIC_0-30cm.tif				#Cation exchange capacity in mmolc/kg
 		- CN_ratio_SoilGrids_null			#Carbon:Nitrogen ratio from the report of SoilGrids
