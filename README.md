@@ -20,13 +20,13 @@ This chapter thoroughly examines soil threats and trends in Southern Mexico, Cen
 
 Folder description:
 
-> SoWSR_SMx_CA_Crb.7z
-	> extent
+-> SoWSR_SMx_CA_Crb.7z
+	-> extent
 		- Extent_AOI_Union.shp 				#Country boundaries
 		- Modis_CLC.shp 				#Corine Land Cover from MODIS
 		- WRBpol.shp 					#Most probable soil type using WRB classification
 		- Extent_level3.shp 				#Intersection of previous Shapes
-	> level3 						#This folder contains the data frame results of calculating zonal statistics from the rasters.
+	-> level3 						#This folder contains the data frame results of calculating zonal statistics from the rasters.
 		- Bare_1km_km2_ZonalStats.csv 			
 		- CIC_0-30cm_ZonalStats.csv 			
 		- CN_ratio_SoilGrids_null_ZonalStats.csv 	
@@ -43,7 +43,7 @@ Folder description:
 		- SOC_slope_negative_ZonalStats.csv
 		- SOC_slope_positive1_ZonalStats.csv
 		- SOCDensity_0_30cm_ZonalStats.csv
-	> rasters
+	-> rasters
 		- Bare_1km_km2.tif				#Bare soil percent per square kilometer
 		- CIC_0-30cm.tif				#Cation exchange capacity in mmolc/kg
 		- CN_ratio_SoilGrids_null			#Carbon:Nitrogen ratio from the report of SoilGrids
@@ -58,6 +58,5 @@ Folder description:
 		- SM_slope_positive1.tif			#Soil moisture positive trend from https://doi.org/10.5194/essd-14-4473-2022
 		- SOC_slope_negative.tif			#Soil organic carbon negative trend from https://doi.org/10.5067/3K9F0S1Q5J2U
 		- SOC_slope_positive1.tif			#Soil organic carbon positive trend from https://doi.org/10.5067/3K9F0S1Q5J2U
-
 	- DB_final.xlsx 					#Data base with the information extract from de raster to build the quantitative data presented in the chapter
 	- ZonalStat_for_prl.py 					#Python script to process the zonal statictis of the rasters using the extent (Shapes) to obtain the data frames (CSV) in folder level3.
